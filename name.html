@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Profile</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F4F4F4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #2A9DF4;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header .edit-btn {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            background-color: transparent;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profile-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .profile-section h2 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            color: #333333;
+        }
+
+        .profile-section p {
+            margin: 5px 0;
+            color: #777777;
+        }
+
+        .contact-info {
+            background-color: #F4F4F4;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info div i {
+            margin-right: 10px;
+            color: #777777;
+        }
+
+        .medical-details, .goal-section {
+            padding: 20px;
+        }
+
+        .medical-details h3, .goal-section h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #333333;
+        }
+
+        .medical-details p {
+            margin: 5px 0;
+            color: #555555;
+        }
+
+        .goal-section {
+            text-align: center;
+        }
+
+        .goal-circle {
+            width: 150px;
+            height: 75px;
+            background: conic-gradient(#4CAF50 calc(75 * 3.6deg), #F4F4F4 0deg);
+            border-radius: 75px 75px 0 0;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .goal-circle::after {
+            content: '75%';
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>View Profile</h1>
+            <button class="edit-btn">Edit</button>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <img src="https://via.placeholder.com/100" alt="Profile Picture">
+            <h2>John Doe</h2>
+            <p>Male, 30</p>
+            <p>Patient ID: 123456</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>+1 234 567 890</span>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <span>john.doe@example.com</span>
+            </div>
+        </div>
+
+        <!-- Medical Details Section -->
+        <div class="medical-details">
+            <h3>Medical Details</h3>
+            <p>Affected Side: Right</p>
+            <p>Condition: Chronic Pain</p>
+            <p>Specialty: Neurology</p>
+            <p>Medical History: Past surgery, hypertension, etc.</p>
+        </div>
+
+        <!-- Goal Reached Section -->
+        <div class="goal-section">
+            <h3>Goal Reached</h3>
+            <div class="goal-circle"></div>
+        </div>
+    </div>
+</body>
+</html>
